@@ -1,77 +1,68 @@
-# Contribution Guidelines for WebSave-AI-Powered-Read-It-Later-Browser-Extension
+# Contributing to WebSaver-Read-Later-Browser-Extension
 
-As an Apex project, `WebSave-AI-Powered-Read-It-Later-Browser-Extension` demands engineering excellence. We enforce strict adherence to the **Apex Technical Authority** standards to ensure future-proof, high-velocity development. By contributing, you agree to uphold these principles.
+Thank you for considering contributing to the WebSaver-Read-Later-Browser-Extension project!
 
-## 1. The Apex Philosophy: Zero-Defect, High-Velocity
+## 🚀 Our Commitment
 
-All contributions must align with the core tenets:
+We aim to foster a collaborative and inclusive environment. All contributions are welcome and valued, adhering to the principles of Zero-Defect, High-Velocity, and Future-Proof development as defined by the Apex Technical Authority.
 
-*   **SOLID Principles:** Code must demonstrate high cohesion and low coupling. Favor Dependency Inversion.
-*   **DRY (Don't Repeat Yourself):** Abstract common logic rigorously.
-*   **YAGNI (You Ain't Gonna Need It):** Implement only what is strictly required for the current feature scope.
-*   **Security First:** Treat user data (especially saved content) with the highest security standards. All network interactions must be secured (HTTPS/WSS).
+## 📜 Code of Conduct
 
-## 2. Development Environment Setup (Leveraging Apex Toolchain)
+This project adheres to a Code of Conduct. By participating, you are expected to uphold this code. Please read the full [Code of Conduct](https://github.com/chirag127/WebSaver-Read-Later-Browser-Extension/blob/main/CODE_OF_CONDUCT.md) to understand what actions are encouraged and unacceptable.
 
-To contribute, ensure your local environment mirrors the CI standards defined in `.github/workflows/ci.yml` and the directives in `AGENTS.md`.
+## 💡 How to Contribute
 
-1.  **Clone the Repository (using new name):**
-    bash
-    git clone https://github.com/chirag127/WebSave-AI-Powered-Read-It-Later-Browser-Extension.git
-    cd WebSave-AI-Powered-Read-It-Later-Browser-Extension
-    
+### 1. Reporting Bugs
 
-2.  **Dependency Management (TypeScript/Node Focus):**
-    Since this is a browser extension leveraging TypeScript/Node, we utilize modern tooling for speed.
-    bash
-    # Install dependencies (Assume npm/yarn/pnpm based on project standard)
-    npm install
-    
+If you find a bug, please report it by submitting a new issue on GitHub. Ensure your issue includes:
 
-3.  **Code Quality Enforcement:**
-    Before committing, you **MUST** ensure all linting and formatting checks pass locally. Failure to pre-validate quality will result in CI failure and rejection.
-    bash
-    # Run Linter and Formatter (Biome or ESLint/Prettier)
-    npm run lint
-    npm run format
+*   A clear, descriptive title.
+*   A detailed description of the bug, including steps to reproduce it.
+*   The expected behavior versus the actual behavior.
+*   Relevant environment details (browser version, operating system).
+*   Screenshots or error logs if applicable.
 
-    # Run Unit Tests (Vitest recommended)
-    npm run test:unit
-    
+### 2. Suggesting Enhancements
 
-## 3. Contribution Workflow
+We welcome feature requests and suggestions for improvement. Please submit them as GitHub issues with a clear title and a detailed explanation of the proposed enhancement and its benefits.
 
-We follow a strict **Feature Branch Workflow** integrated with detailed Pull Request scrutiny.
+### 3. Submitting Pull Requests
 
-1.  **Branching:** Create a new feature or fix branch off `main`:
-    bash
-    git checkout main
-    git pull
-    git checkout -b feat/descriptive-feature-name
-    
+We accept pull requests (PRs) for bug fixes and new features. To ensure a smooth review process:
 
-2.  **Development & Verification:** Implement changes. Ensure **100% test coverage** for new code paths (see `AGENTS.md` for verification protocols).
+*   **Fork the repository:** Create your own fork of the project.
+*   **Create a new branch:** For your feature or bug fix (e.g., `feature/add-new-saving-option` or `fix/login-bug`).
+*   **Develop and test:** Make your changes, ensuring they follow the project's coding standards and pass all tests.
+*   **Add tests:** Write new tests or update existing ones to cover your changes.
+*   **Lint and format:** Ensure your code is clean and adheres to project formatting standards.
+*   **Commit your changes:** Use conventional commit messages for clarity.
+*   **Submit a Pull Request:** Open a PR against the `main` branch of the original repository.
 
-3.  **Commit Messages:** Commit messages must follow the **Conventional Commits Specification** (e.g., `feat: add save-to-MongoDB endpoint`, `fix: resolve memory leak in parsing`).
+#### Branching Strategy & Commit Messages
 
-4.  **Pull Request (PR) Submission:**
-    *   **Target:** Always target the `main` branch.
-    *   **Template:** Use the provided `.github/PULL_REQUEST_TEMPLATE.md` and fill out all sections completely.
-    *   **Linking:** Link any associated GitHub Issues using `Closes #<issue-number>`.
+We follow a simplified version of GitFlow for branches and Conventional Commits for messages:
 
-5.  **Review:** Your PR will undergo mandatory checks: automated CI/CD execution, static analysis, security scan, and manual review by an Apex Architect for adherence to design patterns and performance benchmarks.
+*   **Branches:** `main` (production-ready), `develop` (integration), feature branches (e.g., `feature/xxx`), hotfix branches (e.g., `hotfix/xxx`).
+*   **Commit Message Format:** `type(scope): description`
+    *   `type`: `feat`, `fix`, `chore`, `docs`, `style`, `refactor`, `test`, `ci`, `build`.
+    *   `scope` (optional): The part of the codebase affected (e.g., `api`, `ui`, `parser`).
+    *   `description`: A concise summary of the change.
 
-## 4. Reporting Bugs and Requesting Features
+#### Development Environment Setup
 
-Use the provided templates for all submissions:
+Refer to the `README.md` for detailed instructions on setting up the development environment, installing dependencies, and running the project locally.
 
-*   **Bugs:** Use `.github/ISSUE_TEMPLATE/bug_report.md`. Provide detailed reproduction steps.
-*   **Features:** Create a new Issue describing the **Value Proposition** and the **High-Level Architecture** you envision for the solution.
+## 🤝 Apex Architecture & Standards
 
-## 5. Security Disclosure Policy
+This project adheres to the Apex Technical Authority's guidelines:
 
-We take security extremely seriously. If you discover a vulnerability, **DO NOT** create a public issue. Follow the process outlined in `.github/SECURITY.md` for responsible disclosure.
+*   **Tech Stack:** JavaScript, HTML, CSS, Node.js, Express.js, MongoDB. For browser extensions, modern frontend best practices are expected.
+*   **Architecture:** Maintainability, scalability, and robustness are key. Focus on clean code, modular design, and adherence to established design patterns (e.g., SOLID principles where applicable).
+*   **Testing:** Comprehensive testing (unit, integration, E2E) is critical. Ensure new code is well-tested.
+*   **CI/CD:** All contributions should integrate seamlessly with the CI/CD pipeline defined in `.github/workflows/ci.yml`.
 
---- 
+## ❓ Questions?
 
-*Thank you for helping maintain the integrity of the Apex ecosystem.*
+If you have any questions or need clarification on contributing, please open an issue or reach out to the maintainer.
+
+Thank you for helping to make `WebSaver-Read-Later-Browser-Extension` a fantastic project!
