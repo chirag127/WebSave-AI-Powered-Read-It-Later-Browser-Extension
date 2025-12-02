@@ -1,0 +1,50 @@
+name: CI
+
+# Trigger the workflow on push to the main branch and on pull request events
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build_and_test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [ '20.x' ] # Using Node.js 20.x as it's common for modern JS/TS development
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm' # Cache npm dependencies to speed up subsequent runs
+
+    - name: Install Dependencies
+      run: npm ci # Use 'ci' for deterministic installations in CI environments
+
+    - name: Lint and Format with Biome
+      run: npm run lint -- --apply
+
+    - name: Build Project
+      run: npm run build # Assuming a build script exists for the extension
+
+    - name: Run Unit Tests with Vitest
+      run: npm run test:unit # Assuming a script for unit tests
+
+    # NOTE: For browser extensions, E2E testing might require specific browser environments or simulators.
+    # Playwright can be configured for this. Here's a placeholder.
+    # - name: Run End-to-End Tests with Playwright
+    #   run: npm run test:e2e
+
+    # - name: Upload Coverage Reports (Optional)
+    #   if: success()
+    #   uses: codecov/codecov-action@v4
+    #   with:
+    #     token: ${{ secrets.CODECOV_TOKEN }}
+    #     directory: ./coverage/
