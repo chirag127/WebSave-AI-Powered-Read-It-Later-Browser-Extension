@@ -2,35 +2,31 @@
 
 ## Supported Versions
 
-We are committed to maintaining the security of the `WebSave-AI-Powered-Read-It-Later-Browser-Extension`. This policy outlines the security support for different versions. For the most up-to-date security, always use the latest release.
-
-| Version           | Supported          |
-| ----------------- | ------------------ |
-| Latest (`main`)   | :white_check_mark: |
-| Previous Release  | :x:                |
+We are committed to maintaining a secure codebase. Currently, we **only support the latest version** of the `WebSaver-Read-Later-Browser-Extension` for security patches and updates. Please ensure you are using the most recent release.
 
 ## Reporting a Vulnerability
 
-We take all security vulnerabilities seriously. If you discover a security issue in `WebSave-AI-Powered-Read-It-Later-Browser-Extension`, please report it to us promptly via one of the following methods:
+We appreciate your efforts to responsibly disclose security vulnerabilities. If you find a vulnerability, please follow these steps:
 
-1.  **GitHub Issues (Private Report if possible):** The preferred method is to open a GitHub Issue and **request it to be private** if it contains sensitive information. Please include:
-    *   A clear description of the vulnerability.
+1.  **Do NOT report it publicly** on GitHub issues or discussions. This includes forking and creating pull requests with the vulnerability fixed. 
+2.  **Send an email to our dedicated security team** at `chirag.chahal.27@gmail.com` with the subject line "Security Vulnerability Report - WebSaver-Read-Later-Browser-Extension".
+3.  **Include the following information in your email:**
+    *   A clear and concise description of the vulnerability.
+    *   The affected version(s) of the extension.
     *   Steps to reproduce the vulnerability.
-    *   The impact of the vulnerability.
-    *   Any relevant system information (browser, OS, extension version).
+    *   Any proof-of-concept code or screenshots (if applicable).
+    *   Your suggested mitigation or fix (if you have one).
 
-2.  **Email:** If you are unable to use GitHub Issues or prefer email, please send your report to `security@example.com` (Note: This is a placeholder email. In a real-world scenario, this would be a dedicated security contact email).
+## Response Timeline
 
-We will acknowledge receipt of your report within **48 hours** and will work with you to address the issue. Please do not disclose the vulnerability publicly until we have had a chance to release a fix.
+We aim to acknowledge all security reports within **48 hours** and will provide an estimated timeline for remediation once the vulnerability is confirmed. We will communicate progress and release updates via our standard release channels.
 
-## Security Practices
+## Security Best Practices
 
-*   **Dependency Management:** We regularly scan our dependencies for known vulnerabilities using automated tools integrated into our CI/CD pipeline.
-*   **Code Audits:** Regular code reviews and audits are conducted to identify potential security weaknesses.
-*   **Least Privilege:** The extension operates on the principle of least privilege, requesting only the necessary permissions to function.
-*   **Data Handling:** Sensitive user data is handled with care, encrypted where appropriate, and stored securely.
-*   **AI Integration Security:** When interacting with AI services (like potential future backend AI calls), we ensure secure API key management and validate all inputs and outputs to prevent prompt injection or data leakage.
+As a browser extension, security is paramount. We encourage all users and developers to adhere to the following best practices:
 
---- 
+*   **Keep the extension updated:** Always use the latest version available from the official store or repository.
+*   **Review extension permissions:** Understand what permissions your extensions request and why.
+*   **Be cautious with third-party integrations:** While `WebSaver-Read-Later-Browser-Extension` integrates with robust backends, always be mindful of data privacy when using any online service.
 
-Thank you for helping keep `WebSave-AI-Powered-Read-It-Later-Browser-Extension` secure!
+Thank you for helping us keep `WebSaver-Read-Later-Browser-Extension` secure.
