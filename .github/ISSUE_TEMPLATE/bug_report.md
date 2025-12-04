@@ -1,74 +1,45 @@
-# 🐛 Bug Report
+# Bug Report
 
-Thank you for identifying an issue in `WebSave-AI-Powered-Read-It-Later-Browser-Extension`. Please provide detailed, reproducible information so our team can implement a zero-defect fix.
+Thank you for helping us improve! Please provide as much detail as possible.
 
-## 1. Metadata
+## 1. Environment
 
-| Field | Value |
-| :--- | :--- |
-| **Extension Version:** | (e.g., 1.2.0, or **`main`** branch hash) |
-| **Browser:** | (e.g., Chrome 120, Firefox 118, Edge) |
-| **Operating System:** | (e.g., macOS Sonoma 14.2, Windows 11 Pro) |
+*   **Extension Version:** [e.g., 1.2.0]
+*   **Browser:** [e.g., Chrome 120.0.6099.109, Firefox 115.7.0esr]
+*   **Operating System:** [e.g., Windows 11, macOS Sonoma 14.2.1, Ubuntu 22.04]
 
----
+## 2. Problem Description
 
-## 2. Environment & Stack Context
+Describe the bug clearly and concisely. What happened? What did you expect to happen?
 
-As per the Apex standards, we need to isolate the runtime environment.
+## 3. Steps to Reproduce
 
-*   **Is this reproducible in Incognito/Private mode?** (Yes/No)
-*   **Are any other extensions disabled?** (Yes/No)
-*   **Backend Status (If applicable):** (e.g., MongoDB Connection Healthy, API Latency Normal)
+Provide a step-by-step guide to reproduce the behavior. Be as specific as possible.
 
----
+1.  Go to [specific URL or page].
+2.  Perform action [e.g., click the extension icon, save a page with X content].
+3.  Observe [the erroneous behavior].
 
-## 3. Detailed Description of the Bug
+## 4. Expected Behavior
 
-A concise, single-sentence summary of the problem:
+What should have happened instead?
 
-[Summary Here]
+## 5. Actual Behavior
 
-**Observed Behavior:**
-Describe exactly what happens when you encounter the issue. Include any error messages, unexpected UI states, or incorrect data retrieval.
+What actually happened? Include screenshots or recordings if possible.
 
-text
-[Paste observed output/errors here]
+## 6. Additional Information (Optional)
 
+Any other context about the problem. This might include error messages, logs, or specific website behaviors.
 
-**Expected Behavior:**
-Describe what should have happened according to the extension's specifications.
-
----
-
-## 4. Steps to Reproduce
-
-Please list the minimum number of steps required to trigger the bug. Be precise.
-
-1. Navigate to: `[Specific URL or context]`
-2. Perform action: `[Click X button]`
-3. Observe state: `[The bug occurs]`
-4. ...
+*   **Error Messages:**
+    
+    [Paste any relevant error messages here]
+    
+*   **Screenshots/Recordings:**
+    [Link to or describe screenshots/recordings]
 
 ---
 
-## 5. Architectural Diagnostic (AI/Data Flow)
-
-If the bug involves AI processing (summarization, tagging, etc.) or data persistence (saving/retrieval), please detail the payload:
-
-*   **Data Source Type:** (Article, Recipe, Image Link, Other)
-*   **AI Model Interacted With (If Known):** (e.g., Local JS function, External Gemini Proxy)
-*   **Payload Size (Approx KB):**
-
----
-
-## 6. Code Snippet (If Applicable)
-
-If you have isolated the problematic frontend/background script area, paste a relevant, **non-sensitive** snippet here. (Note: Backend/Database issues should be reported via structure details above.)
-
-javascript
-// Relevant TS/JS code fragment
-
-
---- 
-
-*By submitting this report, you acknowledge that your findings will be processed against the **WebSave-AI-Powered-Read-It-Later-Browser-Extension**'s architectural blueprint.*
+**Repository:** [https://github.com/chirag127/WebSaver-Read-Later-Browser-Extension](https://github.com/chirag127/WebSaver-Read-Later-Browser-Extension)
+**Last Updated:** December 2025
